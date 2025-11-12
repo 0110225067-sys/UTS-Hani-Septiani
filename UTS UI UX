@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Ruangan</title>
+</head>
+<body>
+
+    <fieldset style="width: 550px; border: 1px solid black; padding: 20px;">
+        <legend style="font-weight: bold; padding: 0 5px;">Booking Ruangan</legend>
+        
+        <form action="#" method="POST">
+            
+            <div style="margin-bottom: 10px;">
+                <label for="nama_peminjam" style="display: inline-block; width: 150px;">Nama Peminjam :</label>
+                <input type="text" id="nama_peminjam" name="nama_peminjam" style="width: 350px; border: 1px solid black;" required>
+            </div>
+
+            <div style="margin-bottom: 10px;">
+                <label for="nama_ruangan" style="display: inline-block; width: 150px;">Nama Ruangan :</label>
+                <select id="nama_ruangan" name="nama_ruangan" style="width: 150px; border: 1px solid black;" required>
+                    <option value="aula_cendrawasih">Aula Cendrawasih</option>
+                    <option value="ruang_melati">Ruang Melati</option>
+                    <option value="ruang_anggrek">Ruang Anggrek</option>
+                </select>
+            </div>
+
+            <div style="margin-bottom: 10px;">
+                <label for="deskripsi_kegiatan" style="display: block; width: 150px; float: left;">Deskripsi Kegiatan :</label>
+                <textarea id="deskripsi_kegiatan" name="deskripsi_kegiatan" rows="4" style="width: 350px; border: 1px solid black;" required></textarea>
+                <div style="clear: both;"></div> </div>
+
+            <div style="margin-bottom: 15px;">
+                <label style="display: inline-block; width: 150px;">Fasilitas Tambahan :</label>
+                
+                <input type="checkbox" id="sound_system" name="fasilitas[]" value="Sound System">
+                <label for="sound_system" style="margin-right: 15px;">Sound System</label>
+                
+                <input type="checkbox" id="wifi" name="fasilitas[]" value="Wifi">
+                <label for="wifi" style="margin-right: 15px;">Wifi</label>
+
+                <input type="checkbox" id="layar_besar" name="fasilitas[]" value="Layar Besar">
+                <label for="layar_besar" style="margin-right: 15px;">Layar Besar</label>
+                
+                <input type="checkbox" id="katering" name="fasilitas[]" value="Katering">
+                <label for="katering">Katering</label>
+            </div>
+            
+            <div style="margin-bottom: 10px;">
+                <label for="tanggal_pinjam" style="display: inline-block; width: 150px;">Tanggal Pinjam :</label>
+                <input type="text" id="tanggal_pinjam_display" placeholder="//" style="width: 80px; border: 1px solid black; text-align: center;">
+                <span style="font-size: 1.2em;">📅</span>
+                </div>
+
+            <div style="margin-bottom: 10px;">
+                <label for="kontak_person" style="display: inline-block; width: 150px;">Kontak Person :</label>
+                <input type="text" id="kontak_person" name="kontak_person" style="width: 350px; border: 1px solid black;" required>
+            </div>
+
+            <div style="margin-bottom: 10px;">
+                <label for="telpon_hp" style="display: inline-block; width: 150px;">Telpon/HP :</label>
+                <input type="text" id="telpon_hp" name="telpon_hp" style="width: 350px; border: 1px solid black;" required>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <label for="email" style="display: inline-block; width: 150px;">Email</label>
+                <input type="email" id="email" name="email" style="width: 350px; border: 1px solid black;" required>
+            </div>
+            
+            <div style="margin-top: 10px;">
+                <button type="submit" style="border: 1px solid black; padding: 5px 15px; font-weight: bold; background-color: white;">Submit</button>
+                <button type="reset" style="border: 1px solid black; padding: 5px 15px; font-weight: bold; background-color: white;">Reset</button>
+            </div>
+
+        </form>
+    </fieldset>
+
+</body>
+</html>
